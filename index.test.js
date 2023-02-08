@@ -2,7 +2,7 @@ const Dog = require("./index");
 
 describe("Dog class integrity checks", () => {
   test("Can create new dog instance", () => {
-    let dog1 = new Dog({ name: "Toby", breed: "Spaniel" });
+    let dog1 = new Dog("Toby", "Spaniel");
     expect(typeof dog1).toBe("object");
     expect(dog1).toHaveProperty("name", "Toby");
   });

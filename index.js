@@ -6,9 +6,9 @@ class Breed {
 }
 
 class Dog {
-  constructor(config) {
-    this.name = config.name;
-    this.breed = new Breed(config.breed); // config.breed === "Spaniel"
+  constructor(name, breed) {
+    this.name = name;
+    this.breed = new Breed(breed); // config.breed === "Spaniel"
   }
   bark() {
     return "Bark!";
